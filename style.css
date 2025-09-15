@@ -1,0 +1,170 @@
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: white;
+    color: #333;
+}
+header {
+    background-color: #3399ff;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid white;
+    transition: transform 0.3s;
+}
+header img:hover {
+    transform: scale(1.1);
+}
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+header p {
+    font-size: 1.2rem;
+}
+nav {
+    text-align: center;
+    padding: 20px 0;
+}
+.social-img {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.social-img img {
+    width: 50px;
+    transition: transform 0.3s;
+}
+.social-img li a:hover img {
+    transform: scale(1.2);
+}
+section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+section h2 {
+    text-align: center;
+    color: #3399ff;
+    margin-bottom: 30px;
+    position: relative;
+}
+section h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #3399ff;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
+    text-justify: inter-word;
+}
+#projectsandactivity .projects-activity {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+#projectsandactivity .projects-activit {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+#projectsandactivity .projects-activit img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+#projectsandactivity .projects-activit:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+}
+#projectsandactivity .projects-activit h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+#certificates {
+    padding: 40px 20px;
+    background-color: white; /* สีขาวเรียบ */
+}
+#certificates h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #3399ff;
+    margin-bottom: 30px;
+    position: relative;
+}
+#certificates h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #3399ff;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+.certificates {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+.certificate {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    padding: 15px;
+}
+.certificate img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.certificate p {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: #333;
+}
+.certificate:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+#contact p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+@media (max-width: 600px) {
+    #projectsandactivity .projects-activity {
+        flex-direction: column;
+        align-items: center;
+    }
+    .certificates {
+        grid-template-columns: 1fr;
+    }
+}
